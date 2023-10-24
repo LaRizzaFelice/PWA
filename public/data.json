@@ -1,0 +1,40 @@
+{
+  "title": "Felice La Rizza -  Training & Consult ",
+  "some_events": [
+    {
+      "title": "Automotive Technology Summit",
+      "date": "2023-06-15",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1661779071501-629999b46de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXV0b21vdGl2ZSUyMHdvcmtzaG9wfGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60",
+      "description": "It is a platform known for breaking news, germinating discussions, and debates on future ideas about the automotive and mobility value chain. It continuously produces insights through research, data analysis, and industry forums."
+    },
+    {
+      "title": "Car Design Workshop",
+      "date": "07-07-2023",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1681506183809-5d53e91d4169?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q2FyJTIwRGVzaWduJTIwV29ya3Nob3B8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60",
+      "description": "Automotive design is a creative process used to define the physical appearance of motor vehicles such as cars, trucks, motorcycles etc. It encompasses interior and exterior design."
+    },
+    {
+      "title": "Automotive Engineering Conference",
+      "date": "2023-08-10",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1682144932026-f5ea5364757a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Q2FyJTIwRGVzaWduJTIwV29ya3Nob3B8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60",
+      "description": "Automotive engineers work as part of a team responsible for vehicle design, development, manufacturing and testing. Automotive engineers are involved in the design, manufacture, distribution, marketing, sales and after-sales care of cars (including racing cars), motorbikes and other commercial vehicles."
+    }
+  ],
+  "description": "Welcome to my very first training website still under construction! ",
+  "name": "Felice La Rizza",
+  "description2": "I'm a motivated Technical Trainer with 10 years of experience.",
+  "email": "larizza.felice@gmail.com",
+
+  "pictures": [
+    "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "https://plus.unsplash.com/premium_photo-1661964066289-2ca80fbf77e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "https://plus.unsplash.com/premium_photo-1676651178916-a092c108d11e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+  ],
+  "some_questions": [
+    "How satisfied are you with the overall quality of this course?",
+    "Would you recommend this training course to others in your organization or field?",
+    "How satisfied are you with the content covered in the training course on a scale 1-10?",
+    "How helpful were the training activities and discussions in reinforcing your understanding?"
+  ]
+}

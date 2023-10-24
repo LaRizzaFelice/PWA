@@ -1,21 +1,56 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Felice's survey page",
+  "name": "Felice's survey page",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "512x512"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "About me",
+      "description": "Get to know me better",
+      "url": "/aboutme",
+      "icons": [
+        {
+          "src": "public/logo.png",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Surveys",
+      "description": "Fill in my survey",
+      "url": "/surveypage",
+      "icons": [
+        {
+          "src": "logo.png",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Survey Results",
+      "description": "Get the full list of answers given on my survey",
+      "url": "/resultpage",
+      "icons": [
+        {
+          "src": "logo.png",
+          "type": "image/svg+xml"
+        }
+      ]
     }
   ],
   "start_url": ".",
