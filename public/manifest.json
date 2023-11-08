@@ -24,11 +24,11 @@
       "description": "Get to know me better",
       "url": "/aboutme",
       "icons": [
-        {
-          "src": "public/logo.png",
-          "type": "image/svg+xml"
-        }
-      ]
+        { 
+          "src": "logo96x96.png", 
+          "sizes": "96x96" 
+          }
+        ]
     },
     {
       "name": "Surveys",
@@ -36,8 +36,8 @@
       "url": "/surveypage",
       "icons": [
         {
-          "src": "logo.png",
-          "type": "image/svg+xml"
+          "src": "logo96x96.png",
+          "sizes": "96x96"
         }
       ]
     },
@@ -47,8 +47,8 @@
       "url": "/resultpage",
       "icons": [
         {
-          "src": "logo.png",
-          "type": "image/svg+xml"
+          "src": "logo96x96.png",
+          "sizes": "96x96"
         }
       ]
     }

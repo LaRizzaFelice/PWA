@@ -9,7 +9,7 @@ import ResultPage from "../Pages/SurveyPage/partials/ResultPage";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <HeaderNavBar />,
+    element: <HeaderNavBar />, 
     children: [
      {
         path: "/",

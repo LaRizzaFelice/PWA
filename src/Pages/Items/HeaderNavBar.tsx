@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom"; // Import Link from react-router-dom
 import PollIcon from "@mui/icons-material/Poll";
 
 const pages = [
@@ -31,23 +31,18 @@ export function HeaderNavBar() {
   );
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+    console.log('Opening menu');
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
+    console.log('Closing menu');
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
   return (
     <Box>
       <AppBar position="static" sx={{ backgroundColor: "#26a69a" }}>
-        {" "}
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -69,6 +64,7 @@ export function HeaderNavBar() {
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -80,27 +76,29 @@ export function HeaderNavBar() {
                 <MenuIcon />
               </IconButton>
               <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: "bottom",
-                  horizontal: "left",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "left",
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{
-                  display: { xs: "block", md: "none" },
-                }}
-              >
+  id="menu-appbar"
+  anchorEl={anchorElNav}
+  anchorOrigin={{
+    vertical: "bottom",
+    horizontal: "left",
+  }}
+  keepMounted
+  transformOrigin={{
+    vertical: "top",
+    horizontal: "left",
+  }}
+  open={Boolean(anchorElNav)}
+  onClose={handleCloseNavMenu} // Keep the onClose as it is
+  sx={{
+    display: { xs: "block", md: "none" },
+  }}
+>
                 {pages.map((page, index) => (
-                  <MenuItem key={index} onClick={handleCloseNavMenu}>
+                  <Link key={index} to={page.route} style={{ textDecoration: 'none' }} >
+                  <MenuItem key={index} onClick={handleCloseNavMenu} sx={{ color: '26a69a' }} >
                     <Typography textAlign="center">{page.label}</Typography>
                   </MenuItem>
+                  </Link>
                 ))}
               </Menu>
             </Box>
@@ -125,13 +123,11 @@ export function HeaderNavBar() {
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page, index) => (
-                <Button
-                  key={index}
-                  onClick={() => navigate(page.route)}
-                  sx={{ my: 2, color: "white", display: "block" }}
-                >
-                  {page.label}
-                </Button>
+                <Link key={index} to={page.route} style={{ textDecoration: 'none' }}>
+                  <Button sx={{ my: 2, color: "white", display: "block" }}>
+                    {page.label}
+                  </Button>
+                </Link>
               ))}
             </Box>
           </Toolbar>
