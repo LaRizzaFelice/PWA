@@ -24,11 +24,11 @@
       "description": "Get to know me better",
       "url": "/aboutme",
       "icons": [
-        { 
-          "src": "logo96x96.png", 
-          "sizes": "96x96" 
-          }
-        ]
+        {
+          "src": "logo96x96.png",
+          "sizes": "96x96"
+        }
+      ]
     },
     {
       "name": "Surveys",
